@@ -1,35 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="arnomaris.me: A portfolio for Arno Maris">
+		<meta name="author" content="Arno Maris">
+		<meta name="keywords" content="Arno Maris">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<title>Arno Maris</title>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ8C9TWXS9"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-XQ8C9TWXS9');
+		</script>
+
+		<script src="https://kit.fontawesome.com/8ef1b83bc7.js" crossorigin="anonymous"></script>
 		
 		<link rel="stylesheet" href="stylesheet.css"> 
 	</head>
 	<body>
 		<header>
-			<a class="nav-home" href="#about">Arno Maris</a>
+			<a class="nav-home hidden-mobile" href="#about">Arno Maris</a>
 			<nav>
 				<div class="nav-wrapper">
-					<a href="#about" class="nav-text">About me</a>
-					<a href="#projects" class="nav-text">Projects</a>
-					<a href="#contact" class="nav-text">Contact</a>
+					<a href="#about" class="nav-text" aria-hidden="true">About me</a>
+					<a href="#projects" class="nav-text" aria-hidden="true">Projects</a>
 				</div>
 			</nav>
 		</header>
 
-		<a id="about" data-hs-anchor="true></a>
-		<section class="about">
-			<h1>About</h1>
+		<section class="about" id="about">
+			<div class="space-8"></div>
+			<img src="images/personal.jpg" class="personal-image">
+			<h1 class="personal-text center-text">Arno Maris</h1>
+			<div class="social-link-wrapper">
+				<a class="social-icon" href="https://twitter.com/DrolerinaRBLX" title="Development twitter profile">
+					<i class="fab fa-twitter" aria-hidden="true"></i>
+				</a>
+				<a class="social-icon" href="https://github.com/arnomaris" title="GitHub profile">
+					<i class="fab fa-github" aria-hidden="true"></i>
+				</a>
+				<a class="social-icon" href="https://linkedin.com/in/arno-maris" title="LinkedIn profile">
+					<i class="fab fa-linkedin" aria-hidden="true"></i>
+				</a>
+				<a class="social-icon" href="https://www.roblox.com/users/106412343/profile" title="Roblox profile">
+					<svg class="filter-white" viewBox="0 0 48 48" width="24" height="24">
+						<path d="M11.229,1.98L1.98,36.771l34.792,9.249l9.249-34.792L11.229,1.98z M26.838,28.893l-7.731-2.055 l2.055-7.731l7.731,2.055L26.838,28.893z" />
+					</svg>
+				</a>
+			</div>
+			<div class="space-10"></div>
+			<p class="about-text center-text"> Creating great games on Roblox, using <a class="reference" href="https://luau-lang.org/">Luau</a>.</p>
+			<div class="space-3"></div>
 		</section>
 		
-		<a id="projects" data-hs-anchor="true></a>
-		<section class="projects">
-			<h1>Projects</h1>
+		<section class="projects" id="projects">
+			<div class="space-3"></div>
+			<div class="project-container">
+				<div class="project-item">
+					<div class="content">
+						<div class="project-image"></div>
+						<div class="project-body">
+							<h4 class="project-title center-text">
+								<a class="reference" href="https://www.roblox.com/games/1788251222/Streamlined-ALPHA">
+									Streamlined
+								</a>
+							</h4>
+							<h5 class="project-sub-title center-text">
+								Dutch transport simulator on Roblox
+							</h5>
+							<h4 class="project-about center-text">
+								<a class="link" href="https://www.roblox.com/games/1788251222/Streamlined-ALPHA">Streamlined</a>
+								has been played over 1 million times while still in development.
+							</h4>
+							<h6 class="project-time center-text">
+								March 2019 - Present
+							</h6>
+						</div>
+					</div>
+				</div>
+				<div class="project-item">
+					<div class="content">
+						<div class="project-body">
+							<h4 class="project-title center-text">
+								Streamlined Discord Bot
+							</h4>
+							<h5 class="project-sub-title center-text">
+								Private Discord bot for holding Photo Contests
+							</h5>
+							<h4 class="project-about center-text">
+								A discord bot written in JavaScript using 
+								<a class="link" href="https://discord.js.org">Discord JS</a>.
+								Mainly a side project to gain more experience in JavaScript and MySQL. Bot can be checked out in the 
+								<a class="link" href="https://discord.gg/Streamlined">Streamlined Discord</a>.
+							</h4>
+							<h6 class="project-time center-text">
+								Aug 2020 - Present
+							</h6>
+						</div>
+					</div>
+				</div>
+				<div class="project-item">
+					<div class="content">
+						<div class="project-body">
+							<h4 class="project-title center-text">
+								<a class="reference" href="https://www.roblox.com/games/665771945/Rails-Unlimited">
+									Rails Unlimited
+								</a>
+							</h4>
+							<h5 class="project-sub-title center-text">
+								Train simulator on Roblox
+							</h5>
+							<h4 class="project-about center-text">
+								<a class="link" href="https://www.roblox.com/games/665771945/Rails-Unlimited">Rails Unlimited</a>
+								has been played over 30 million times. It's one of the biggest rail simulators on Roblox.
+							</h4>
+							<h6 class="project-time center-text">
+								Feb 2017 - Dec 2018
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		
-		<a id="contact" data-hs-anchor="true></a>
-		<section class="contact">
-			<h1>Contact</h1>
-		</section>
+		<footer>
+				<p class="footer-text center-text">
+				&copy; <script>document.write(new Date().getFullYear())</script> Arno Maris
+				
+				</p>
+		</footer>
 	</body>
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+	<script src="script.js"></script>
 </html>

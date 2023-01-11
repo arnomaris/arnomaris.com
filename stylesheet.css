@@ -1,16 +1,37 @@
 html {
 	scroll-behavior: smooth;
+	background-color:rgb(50, 50, 50)
 }
 
 @font-face {
 	font-family: Fira Mono;
 	src: url(fonts/FiraMono-Regular.ttf);
 }
+
+@font-face {
+	font-family: Fira Bold;
+	src: url(fonts/FiraMono-Bold.ttf);
+}
+
+@font-face {
+	font-family: Open Sans;
+	src: url(fonts/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+@media (max-width: 768px) {
+	.hidden-mobile {
+		display: none;
+	}
+}
   
 body{
-	margin-top: 80px;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin:0;
+	padding:0;
+	font-weight: 400;
+	font-family: 'Fira Mono';
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 nav{
@@ -31,21 +52,41 @@ h1{
 	line-height: 30px;
 }
 
+footer{
+	color: #FFFFFF;
+	height:100px
+}
+
+.center-text{
+	text-align: center;
+}
+
+.reference{
+	text-decoration: none;
+	color: #000000;
+}
+
+.link{
+	color: #000000;
+}
+
+.content{
+}
+
 .nav-home{
 	position: absolute;
 	left: 40px;
 	top: 25px;
 	
-	font-family: 'Fira Mono';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 30px;
 	line-height: 36px;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	min-width: 1000px;
 	
-	color: #000000;
+	color: #FFFFFF;
 }
 
 .nav-wrapper{
@@ -60,9 +101,6 @@ h1{
 }
 
 .nav-text{
-	font-family: 'Fira Mono';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 22px;
 	line-height: 30px;
 	display: flex;
@@ -71,7 +109,185 @@ h1{
 	
 	color: #000000;
 	flex: none;
-	order: 2;
 	flex-grow: 0;
 	margin: 0px 27px;
 }
+
+.about{
+	background-image: url("images/background.jpg");
+	background-size: cover;
+	background-position: center, center;
+}
+
+.personal-image{
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.personal-text{
+	font-family: 'Fira Bold';
+	font-size: 40px;
+	line-height: 5px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-text{
+	font-size: 16px;
+	line-height: 20px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: #FFFFFF;
+}
+
+.social-link-wrapper{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icon{
+    background-color:rgb(50, 50, 50);
+	height: 36px;
+	width: 36px;
+	font-size:24px;
+	color:white;
+
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	flex: none;
+	justify-content: center;
+	flex-grow: 0;
+	margin: 0px 10px;
+	border-radius: 100%;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.filter-white{
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(70deg) brightness(101%) contrast(104%);
+}
+
+.projects{
+	color: #FFFFFF;
+}
+
+.project-container{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 420px));
+	grid-auto-rows: 1px;
+	max-width: 1320px;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-item{
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	min-width: 300px;
+	max-width: 420px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-body{
+	margin: 15px;
+	color: #000000;
+	overflow-wrap: break-word;
+	font-family: 'Open Sans';
+}
+
+.project-image{
+	background-image: url("images/streamlined.png");
+	background-size: cover;
+	height: 230px;
+	border-radius: 10px;
+}
+
+.project-title{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.project-sub-title{
+	font-weight: 60;
+	font-size: 14px;
+	line-height: 14px;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.project-about{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	position: relative;
+	margin: 5px;
+}
+
+.project-time{
+	font-weight: 100;
+	font-size: 13px;
+	line-height: 13px;
+	margin: 10px;
+}
+
+.footer-text{
+	font-size: 14px;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.space-3{
+	height: 30px;
+}
+
+.space-8{
+	height: 80px;
+}
+
+.space-10{
+	height: 100px;
+}
+
+a{
+	outline: 0;
+}
+
+a.nav-text{
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+
+a.nav-text:hover{
+	color: rgb(80, 80, 80);
+}
+
+
+a.social-icon{
+    -webkit-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+}
+
+a.social-icon:hover{
+	background-color: rgb(20, 20, 20);
+}
+
+a.reference:hover{
+	text-decoration: underline;
+}
+
+a.link:hover{
+	color: #0066ec;
+}
+
